@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import logo from '../../logo.svg';
 import './style.css';
+import clds from 'console-log-design-system';
 
 // useState consiste em um estado inicial, 
 // depois numa função com um método q vai definir a mudança desse estado
+
+const {makeComment} = clds;
 
 const Header = () => {
     const [tema, setTema] = useState('dark') ;
@@ -11,6 +14,14 @@ const Header = () => {
     const toggleTema = () => {
         let novoTema = tema === 'dark' ? 'light' : 'dark';
         setTema(novoTema);
+        makeComment(
+            'toggleTema',
+            [`tema >> ${novoTema}`],
+            'success',
+            'md',
+            'badgeInverted'
+        );
+        
     }
 
     return (
