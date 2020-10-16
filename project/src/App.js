@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
+import SimpleSlider from './components/SimpleSlider';
 import  { dataLayerInit, updateDataLayer } from './components/Helpers/DataLayer';
 import './App.css';
 
@@ -18,9 +19,12 @@ function App() {
   }
 
   return (
-    <div className="App" onClick={() => countClick()}>
-      <Header/>
-    </div>
+    <>
+      <div className="App" onClick={() => countClick()}>
+        <Header/>
+        <SimpleSlider/>
+      </div>
+    </>
   );
 }
 
