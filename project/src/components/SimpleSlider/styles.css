@@ -9,3 +9,59 @@
     overflow-y: hidden;
     padding-top: 0;
 }
+
+.mega-ultra-slider .simple-slider-slide .slick-slide{
+    max-height: calc(100vh - 241px);
+    overflow: hidden;
+}
+
+.mega-ultra-slider .simple-slider-slide .slick-slide div img {
+    margin-top: -12.5%;
+}
+
+ul.slick-dots {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+}
+
+.slick-dots li{
+    flex: 0 1 25%;
+    display: inline-flex;
+}
+
+.slick-dots li button {
+    background-color: purple;
+    border: none;
+    border-radius: 50%;
+    color: transparent;
+    font-size: 0;
+    height: 12px;
+    margin-bottom: 18px;
+    margin-left: 6px;
+    outline-color: transparent;
+    padding: 0;
+    width: 12px;
+  }
+  
+  .slick-dots li button:hover {
+    background-color: whitesmoke;
+  }
+  
+  .slick-dots li:active,
+  .slick-dots li:focus,
+  .slick-dots li:visited,
+  .slick-dots li button:active,
+  .slick-dots li button:focus,
+  .slick-dots li button:visited {
+    border-color: transparent;
+    outline: none;
+    outline-color: transparent;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: greenyellow;
+  }
+  

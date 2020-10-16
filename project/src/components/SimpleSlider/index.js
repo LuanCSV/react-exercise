@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import slides from './slides.json';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './styles.css';
 
 
 console.log(slides);
