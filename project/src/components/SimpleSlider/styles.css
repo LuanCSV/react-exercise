@@ -1,0 +1,11 @@
+.mega-ultra-slider{
+    height: calc(100vh - 282px);
+    max-height: calc(100vh - 182px);
+
+}
+
+.mega-ultra-slider .simple-slider-slide {
+    background-color: darkorange;
+    overflow-y: hidden;
+    padding-top: 0;
+}
